@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quest JavaScript Intermediário - Formulário com validação</title>
+
+    <link rel="stylesheet" href="./src/css/reset.css" />
+    <link rel="stylesheet" href="./src/css/style.css" />
+  </head>
+  <body>
+    <main class="main">
+      <div class="info">
+        <h1 class="title">
+          FICOU COM DÚVIDA? <br />
+          NOS MANDE UMA MENSAGEM!
+        </h1>
+        <p class="text">
+          caso tenha ficado com qualquer dúvida basta nos mandar uma mensagem e
+          entraremos em contato em menos de 24h.
+        </p>
+      </div>
+      <div class="form">
+        <input type="text" placeholder="Nome completo *" id="name" class="input"/>
+        <label class="label-off" for="name">campo obrigatório</label>
+
+        <input type="email" name="email" id="email" placeholder="Email *" class="input" />
+        <label class="label-off" for="email">campo obrigatório</label>
+
+        <input type="tel" name="tel" id="tel" placeholder="Telefone *" class="input"/>
+        <label class="label-off" for="tel">campo obrigatório</label>
+
+        <textarea
+          name="mensagem"
+          id="msg"
+          cols="30"
+          rows="10"
+          placeholder="Mensagem *" class="input"
+        ></textarea>
+        <label class="label-off" for="msg">campo obrigatório</label>
+
+        <span class="rule">*campos obrigatórios</span>
+        <button class="btn" id="btn">Enviar</button>
+      </div>
+    </main>
+    <script src="./src/js/index.js"></script>
+  </body>
+</html>

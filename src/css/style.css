@@ -1,0 +1,109 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap");
+
+body {
+  min-height: 100vh;
+  background: url(../image/bg-repeat.jpg) repeat-x center;
+  font-family: "Roboto", sans-serif;
+  background-size: contain;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main {
+  width: 800px;
+  height: 402px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 12px 50px;
+  gap: 60px;
+}
+
+.main .info {
+  color: #fff;
+  max-width: 300px;
+}
+
+.main .info .title {
+  font-size: 20px;
+  font-weight: 900;
+  margin-bottom: 11px;
+}
+
+.main .info .text {
+  font-size: 15px;
+  font-weight: 400;
+}
+
+.main .form {
+  background-color: #fff;
+  width: 340px;
+  height: 378px;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  font-size: 15px;
+}
+
+.main .form input,
+.main .form textarea {
+  padding-left: 10px;
+  border-radius: 5px;
+  border: 1px solid #000;
+  width: 298.013px;
+  height: 35.11px;
+}
+
+.main .form input.border-valid,
+.main .form textarea.border-valid {
+  border: 1px solid #00c22b;
+}
+
+.main .form input.border-invalid,
+.main .form textarea.border-invalid {
+  border: 1px solid #f52e2e;
+}
+
+.main .form input::placeholder,
+.main .form textarea::placeholder {
+  color: #a8a8a8;
+}
+
+.main .form textarea {
+  height: 100px;
+  font-size: 16px;
+}
+
+.main .form .rule {
+  margin-top: -5px;
+  font-size: 15px;
+  font-weight: 400;
+}
+
+.main .form .btn {
+  background-color: #3ccc87;
+  color: #fff;
+  width: 298.013px;
+  height: 41.129px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 15px;
+  border: none;
+  margin-top: 11px;
+}
+
+.main .form .btn:hover {
+  box-shadow: 1px 1px 10px 0.5px #3ccc87;
+}
+
+.main .form .label-off {
+  color: #fff;
+  font-size: 8px;
+  font-weight: 400;
+  margin-bottom: 11px;
+}
+
+.main .form .label-on {
+  color: #f52e2e;
+}
